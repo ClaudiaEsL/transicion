@@ -47,13 +47,13 @@ nav{
         padding:2px;
     }
     .cont-menu{
-        background-color: rgb(21, 22, 59);
+        background-color: rgb(14, 16, 75);
         width:100%;
         display: flex;
         padding:5px;
     }
     .options{
-        background-color: rgb(21, 22, 59);
+        background-color: rgb(14, 16, 75);
         z-index: 1;
     }
     .content-options div a{
@@ -73,6 +73,9 @@ nav{
     }
     #img-l-a img{
         width:30%;
+        background-color: white;
+        padding: 10px;
+        display:none;
     }
     nav{
         width:100%;
