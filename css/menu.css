@@ -1,0 +1,88 @@
+nav{
+    width:23%;
+    height:620px;
+    overflow: scroll;
+    position: fixed;
+}
+.btn-options{
+    color:white;
+}
+/*Icono*/
+.icon-menu{
+    width:100%;
+    padding:8px;
+}
+.icon-menu a{
+    color:black;
+    width: 100%;
+    padding:5px;
+    text-decoration: none;
+}
+.cont-menu .img{
+    margin-top:1%;
+}
+.cont-menu .img, .icon-menu{
+    text-align:center;
+}
+.icon-menu button{
+    display:none;
+}
+
+.content-options div{
+    margin: 1% 0 1% 0;
+}
+.content-options div a{
+    color:black;
+}
+#cerrar{
+    display:none;
+    background-color:none;
+}
+@media screen and (max-width:750px){
+    #options{
+        display: none;
+    }
+    .icon-menu button{
+        display:inline;
+        padding:2px;
+    }
+    .cont-menu{
+        background-color: rgb(21, 22, 59);
+        width:100%;
+        display: flex;
+        padding:5px;
+    }
+    .options{
+        background-color: rgb(21, 22, 59);
+        z-index: 1;
+    }
+    .content-options div a{
+        color:white;
+    }
+    .cont-menu div img{
+        width:30%;
+    }
+    .cont-menu .img{
+        text-align:left;
+    }
+    .cont-menu .icon-menu{
+        text-align: right;
+    }
+    #img-l-a{
+        width:100%;
+    }
+    #img-l-a img{
+        width:30%;
+    }
+    nav{
+        width:100%;
+        position: relative;
+        height: 50px;
+        overflow:visible;
+    }
+    .icon-menu a{
+        background-color:rgb(249, 249, 250);
+        border-radius: 5px;
+    }
+    
+}

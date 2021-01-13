@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    margin:0 10% 0 10% ;
+}
+.contenedor-body{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Vista grande*/
+@media screen and (max-width:750){
+   
+}

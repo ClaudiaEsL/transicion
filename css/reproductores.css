@@ -1,0 +1,19 @@
+.reproductores{
+    width:10%;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left:65%;
+    z-index:-1;
+}
+.reproductores .icon{
+    padding:2%;
+    text-align: center;
+}
+@media screen and (max-width:750px){
+    .reproductores{
+        margin-left:83%;
+        width:15%;
+    }
+}
