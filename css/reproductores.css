@@ -11,6 +11,12 @@
 .reproductores .icon{
     padding:2%;
     text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.reproductores .icon button{
+    background-color:rgb(244, 244, 248);
+    border: none;
 }
 @media screen and (max-width:750px){
     .reproductores{

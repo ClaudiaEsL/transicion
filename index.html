@@ -14,6 +14,7 @@
     <title>Document</title>
     <!--jquery-->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/show-doc.js"></script>
 
 </head>
 <body>
@@ -40,13 +41,13 @@
                 </div>
                 <div class="content-options">
                     <div class="nav-item">
-                        <a href="#" class="nav-link btn btn-options"><strong>1.</strong> Introduccion</a>
+                        <a href="#" onclick="introduccion();" class="nav-link btn btn-options"><strong>1.</strong> Introduccion</a>
                     </div>
                     <div class="nav-item">
-                        <a href="#" class="nav-link btn btn-options"><strong>2.</strong> La informacion municipal</a>
+                        <a href="#" onclick="informacion();" class="nav-link btn btn-options"><strong>2.</strong> La informacion municipal</a>
                     </div>
                     <div class="nav-item">
-                        <a href="#" class="nav-link btn btn-options"><strong>3.</strong> Obtener, organizar y ofrecer informacion</a>
+                        <a href="#" onclick="obtener();" class="nav-link btn btn-options"><strong>3.</strong> Obtener, organizar y ofrecer informacion</a>
                     </div>
                     <div class="nav-item">
                         <a href="#" class="nav-link btn btn-options"><strong>4.</strong> Comision social</a>
@@ -56,7 +57,7 @@
                     </div>
                     <hr>
                     <div class="nav-item">
-                        <a style="color:blue" href="#" class="nav-link btn">Documentos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                        <a style="color:blue" href="#" class="nav-link btn" onclick="documentos();">Documentos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
                             <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
                             <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
                           </svg>
@@ -70,59 +71,31 @@
         </nav>
         <!--Content-->
         <main class="contenido-1">
-            <div class="contenido">
-                <div class="row">
-                    <h1>Introduccion</h1>
-                </div>
-                <div class="row">
-                    <img src="" alt="" class="img-fluid">
-                </div>
-                <div class="contenido col">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quidem porro facere laborum repellendus tenetur magnam in non, necessitatibus atque enim ullam quos magni provident ratione quam vel impedit! Quisquam?</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam praesentium, ab vero molestiae sequi nobis porro odit ex, necessitatibus quidem quibusdam blanditiis incidunt! Nesciunt minima quo excepturi fugiat, rem laborum?
-                        Dolore quasi asperiores autem, hic molestias ducimus reprehenderit illum sit quaerat aliquid perferendis suscipit ab? Odit ex hic cupiditate minima dolor nulla magnam! Voluptatem molestias tempora explicabo repudiandae dolorem! Repudiandae!
-                        Sunt nam ipsam accusantium? Explicabo quas, tempora facere nesciunt ullam delectus magnam quae est dolor vel qui labore fuga asperiores rem iure iste dolorum a voluptatibus accusantium voluptatum perferendis consectetur.
-                        Earum commodi voluptatum incidunt? Molestiae, laboriosam eveniet ab quisquam voluptatibus voluptates officia obcaecati atque qui distinctio maxime iure esse rerum odio eaque! Sit, vero. Recusandae dolorem reiciendis officia debitis deleniti.
-                        Asperiores pariatur laborum numquam sint iste! Voluptatibus ut mollitia fugiat iure numquam reprehenderit asperiores. Vero incidunt labore temporibus libero qui, consectetur consequuntur nam tempore maiores ducimus quae. Sunt, consectetur commodi!
-                        Perspiciatis repellendus ipsam molestiae inventore, ut consequuntur voluptatibus officiis odit itaque eaque atque ab eius aperiam laudantium laboriosam et saepe illo soluta mollitia aliquam hic, quod deleniti! Repellendus, corrupti unde?
-                        Delectus omnis veniam nostrum nesciunt debitis quaerat quibusdam quis quo, dolorum quae, facilis, est id dolorem eaque odio! Expedita assumenda illo porro iusto ipsum maiores animi pariatur adipisci. Magni, dolores.
-                        Adipisci ipsum voluptates quasi omnis laboriosam minima at a! Labore temporibus dicta, maiores corrupti possimus saepe ad quibusdam at. Voluptatibus recusandae veritatis quam atque dolorem fugiat nisi est quibusdam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident sed ad vel alias amet atque eligendi eius, velit doloremque. Expedita maiores tenetur nobis eveniet inventore id modi consequuntur rerum.
-                        Officiis modi impedit ipsa quo magni, consequuntur harum dicta aperiam enim assumenda veritatis culpa illum tempora odio natus quos et, provident nemo est accusamus dolor expedita blanditiis. Deserunt, ullam eos.
-                        Nam aliquam deleniti facere quod minima id molestias quam voluptatibus sit aspernatur quisquam, ipsa, itaque cupiditate deserunt beatae consectetur? Vitae voluptatibus doloribus saepe illum exercitationem repellendus minus et reiciendis incidunt!
-                        Recusandae placeat quidem tenetur deleniti cum rerum eveniet tempora, a cumque architecto voluptate quasi veniam at laudantium ullam expedita, voluptatem repellat aperiam soluta sapiente dolor ipsa. Eius rerum officia at.
-                        Repellendus iure voluptas sit sint! Voluptate beatae, enim nisi reiciendis hic molestias, veritatis est, quaerat officiis sed mollitia atque! Velit sint quod aperiam porro fugit dolorum, nesciunt excepturi ipsam quam.
-                        A modi tempore, voluptatem sed doloribus est incidunt nisi molestiae animi assumenda neque, nemo amet ab distinctio non voluptas ipsa aperiam. Quis vero odio sint ut voluptas esse optio vitae.
-                        Accusantium voluptate natus reprehenderit officiis laborum facilis. Dolor in eaque ratione aperiam autem. Consequuntur ipsam aliquid, dolores tenetur asperiores quos odio ducimus nemo quam nam mollitia aut qui aliquam repellat?
-                        Nam, mollitia neque corporis adipisci molestiae amet. Nulla quos suscipit aperiam voluptatem maiores molestias ut quaerat excepturi! Iure dolor labore quod similique inventore, quas error ut distinctio minima architecto assumenda!
-                        Ab inventore, dignissimos aspernatur consectetur cumque, aperiam esse est corrupti voluptatum praesentium voluptates soluta reiciendis laborum dolores repellat hic? Perspiciatis, aliquid repudiandae? Aperiam, quos vitae quibusdam deleniti adipisci dolorum rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempore, voluptates sunt ea inventore voluptas, placeat delectus rerum amet minima repellendus fugiat corrupti nobis veritatis accusamus. Tempore id quod eos!</p>
-                    </div>
-                </div>
+            <div class="contenido" id="contendido-pagina">
+                
             </div>
             <div class="reproductores">
                 <div class="icon">
                     <button>
-                        <svg class="btn" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-                        <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                    </svg>
+                        <svg class="btn btn-primary" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
                     </button>
                     
                 </div>
                 <div class="icon">
                     <button>
-                        <svg class="btn" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
-                        <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
-                    </svg>
+                        <svg class="btn btn-primary" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                        </svg>
                     </button>
                     
                 </div>
-                <div class="icon">
+                <div class="icon" style="cursor: pointer;">
                     <button>
-                        <svg class="btn" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop" viewBox="0 0 16 16">
-                        <path d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H5z"/>
-                    </svg>
+                        <svg class="btn btn-primary" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+                            <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                        </svg>
                     </button>
                     
                 </div>
@@ -130,7 +103,9 @@
             </div>
         </main>     
     </div>
-    
+    <div id="hi">
+
+    </div>
     <!--Bostrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!--Js-->
