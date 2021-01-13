@@ -3,7 +3,7 @@
     height:600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center ;
     position: fixed;
     margin-left:65%;
     z-index:-1;
