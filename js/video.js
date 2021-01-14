@@ -1,6 +1,7 @@
 
+var mp4 = document.getElementById('video');
 /*Ver tutorial*/
 function verVideo(){
-    document.getElementById('video').css("display","block");
-    document.getElementById('video').play();
+    mp4.style = "display: block;"
+    mp4.play();
 }
