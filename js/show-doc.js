@@ -1,8 +1,5 @@
 var ruta = './1.intro.html';
 
-$(document).ready(function () {
-    $('#contendido-pagina').load(ruta);
-});
 function introduccion(){
     $(document).ready(function () {
         $('#contendido-pagina').load('./1.intro.html');

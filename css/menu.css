@@ -1,11 +1,22 @@
 nav{
     width:23%;
-    height:600px;
+    height:650px;
     overflow: scroll;
     position: fixed;
+    background: linear-gradient(to bottom right, rgb(128, 128, 255), rgb(12, 16, 231));
 }
 .btn-options{
-    color:white;
+    color:white!important;
+}
+.bg{
+    background-color:rgba(109, 181, 245, 0.671);
+}
+.bg a{
+    color:rgb(18, 18, 24);
+    margin-bottom: 2px;
+}
+.bg a:hover{
+    color:rgb(197, 30, 0)!important;
 }
 /*Icono*/
 .icon-menu{
@@ -27,18 +38,28 @@ nav{
 .icon-menu button{
     display:none;
 }
-
-.content-options div{
-    margin: 1% 0 1% 0;
-}
-.content-options div a{
-    color:black;
+.content-options div .btn-options:hover{
+    color:rgb(51, 51, 51)!important;
 }
 #cerrar{
     display:none;
     background-color:none;
+    color:white;
+}
+.nav-item{
+    padding-left:5%;
+    display:flex;
+    flex-direction: row;
+}
+#menu{
+    display:none;
+    background-color:none;
+    color:white;
 }
 @media screen and (max-width:750px){
+    #menu{
+        display:inline;
+    }
     #options{
         display: none;
     }
