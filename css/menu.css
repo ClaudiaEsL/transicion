@@ -13,8 +13,13 @@ nav{
     color:white!important;
 }
 .options div h4{
+    color:#103f97;
     font-family: 'Roboto Slab', serif;
-    background-color:rgba(109, 181, 245, 0.671);  padding:1% 0 1% 0;
+    background-color:#8ac7fd91;  
+    padding:2% 0 2% 0;
+}
+.options{
+    display:block;
 }
 .bg{
     background-color:#8ac7fd91;

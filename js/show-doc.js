@@ -1,5 +1,11 @@
 var ruta = './1.intro.html';
 
+
+/*Prueba*/ 
+$(document).ready(function () {
+    $('#contendido-pagina').load('./1.Matriz.html');
+});
+
 function introduccion(){
     $(document).ready(function () {
         $('#contendido-pagina').load('./1.intro.html');
