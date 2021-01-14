@@ -7,7 +7,7 @@ nav{
     height:650px;
     overflow: scroll;
     position: fixed;
-    background: linear-gradient(to bottom right,#29a6e7, #103f97);
+    background: linear-gradient(to bottom right,#44b7f5, #2239bb,#073fa8);
 }
 .btn-options{
     color:white!important;
@@ -32,7 +32,7 @@ nav{
     color:rgb(197, 30, 0)!important;
 }
 .btn-herramientas{
-    color:rgb(10, 255, 10)!important;
+    color:rgb(79, 248, 79)!important;
 }
 .btn-herramientas:hover{
     color:rgb(2, 83, 2)!important;
