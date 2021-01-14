@@ -1,22 +1,36 @@
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 nav{
     width:23%;
     height:650px;
     overflow: scroll;
     position: fixed;
-    background: linear-gradient(to bottom right, rgb(128, 128, 255), rgb(12, 16, 231));
+    background: linear-gradient(to bottom right,#29a6e7, #103f97);
 }
 .btn-options{
     color:white!important;
 }
+.options div h4{
+    font-family: 'Roboto Slab', serif;
+    background-color:rgba(109, 181, 245, 0.671);  padding:1% 0 1% 0;
+}
 .bg{
-    background-color:rgba(109, 181, 245, 0.671);
+    background-color:#8ac7fd91;
 }
 .bg a{
-    color:rgb(18, 18, 24);
+    color:rgb(25, 24, 32);
     margin-bottom: 2px;
 }
 .bg a:hover{
     color:rgb(197, 30, 0)!important;
+}
+.btn-herramientas{
+    color:rgb(10, 255, 10)!important;
+}
+.btn-herramientas:hover{
+    color:rgb(2, 83, 2)!important;
 }
 /*Icono*/
 .icon-menu{
@@ -68,13 +82,13 @@ nav{
         padding:2px;
     }
     .cont-menu{
-        background-color: rgb(14, 16, 75);
+        background-color: #1471cb;
         width:100%;
         display: flex;
         padding:5px;
     }
     .options{
-        background-color: rgb(14, 16, 75);
+        background-color:#1471cb;
         z-index: 1;
     }
     .content-options div a{

@@ -7,8 +7,11 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-left:90%;
-    background: linear-gradient(to bottom right, rgb(12, 16, 231), rgb(230, 230, 235));
-    padding-bottom: 50px;;
+    background: linear-gradient(to bottom right,#103f97, #29a6e7);
+    padding-bottom: 50px;
+}
+.reproductores h5{
+    color:rgba(255, 255, 255, 0.658);
 }
 .reproductores .icon{
     padding:2%;
@@ -21,6 +24,18 @@
     background-color:rgba(255, 30, 0, 0);
     border: none;
 }
+/*Video*/
+.reproductores .video{
+    padding:2%;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color:none;
+}
+.reproductores .video button{
+    background-color:rgba(255, 30, 0, 0);
+    border: none;
+}
 @media screen and (max-width:750px){
     .reproductores{
         margin-left:85%;
@@ -29,10 +44,11 @@
         height: 500px;
         background: none;
     }
-    .reproductores h5{
-        display:none;
-    }
     .reproductores .icon{
         margin-top: 15px;
+    }
+    .reproductores h5{
+        color:rgba(6, 11, 63, 0.658);
+        font-size:15px;
     }
 }
