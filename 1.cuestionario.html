@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario</title>
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contenedor.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/reproductores.css">
+    <!--Boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Inicio</title>
+    <!--jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
 </head>
 <body>
+    <div class="contenedor-body">
+        <!--Navbar-->
+        <nav class="">
+            <div class="cont-menu">
+                <div class="img" >
+                    <img src="images/logo-amdeco.png" alt="" class="img-fluid text-center" width="40%" >
+                </div>
+                <div class="icon-menu btn" style="color:white;">
+                    <svg  id="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <svg id="cerrar" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="options text-center" id="options">
+                <div>
+                    <h4>Contenido</h4>
+                </div>
+                <div class="content-options">
+                    <div class="nav-item">
+                        <a href="index.html"  class="nav-link btn btn-options">Inicio </a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="images/one.svg" alt="" class="img-fluid" width="20px">
+                        <a href="1.presentacion.html"  class="nav-link btn btn-options">Presentacion</a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="images/two.svg" alt="" class="img-fluid" width="20px">
+                        <a href="2.diapositivas.html" class="nav-link btn btn-options">Diapositivas</a>
+                    </div>
+                    <div class="bg active">
+                        <a href="Matriz-1.html" class="nav-link">Matriz 1: Area administrativa y financiera</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="documentos.html" class="nav-link btn btn-herramientas" onclick="documentos();">Herramientas de trabajo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                            <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                          </svg>
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link btn btn-options">Creditos</a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="reproductores">
+            <!--
+            <h5 class="text-center">
+                Ver tutorial
+            </h5>
+            <div class="video">
+                <button>
+                    <svg class="btn btn-danger" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                        <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                      </svg>
+                </button>
+                
+            </div>
+            <h5 class="text-center">
+                Reproductor
+            </h5>
+            <div class="icon">
+                <button>
+                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </button>
+                
+            </div>
+            <div class="icon" style="cursor: pointer;">
+                <button>
+                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+                        <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                    </svg>
+                </button>
+                
+            </div>
+            -->
+        </div>
+        <!--Content-->
+        <main class="contenido-1">
+            <div class="contenido" id="contendido-pagina">
+                <form action="verificar.php" >
+                    <h1>Cuestionario</h1>
+                    <div class="conte-quiz" >
+                        <ul>
+                            <!--Pregunta 1-->
+                            <li>
+                                <h5>1.Pregunta</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      Default radio
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                      Second default radio
+                                    </label>
+                                  </div>
+                                  <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                      Disabled radio
+                                    </label>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="sumbit" value="Siguiente" class="btn btn-primary">
+                </form>
+            </div>
+        </main>
+    </div>
+    <!--Bostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--Js-->
+    <script src="js/menu.js"></script>
     
 </body>
 </html>
