@@ -9,23 +9,27 @@ nav{
     position: fixed;
     background: linear-gradient(to bottom right,#44b7f5, #2239bb,#073fa8);
 }
+
 .btn-options{
     color:white!important;
 }
+.active a{
+    color:rgb(14, 14, 20)!important;
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.712);
+}
 .options div h4{
-    color:#103f97;
+    color:#ffffff;
     font-family: 'Roboto Slab', serif;
-    background-color:#8ac7fd91;  
     padding:2% 0 2% 0;
+    background-color: rgba(26, 30, 90, 0.767);
 }
 .options{
     display:block;
 }
-.bg{
-    background-color:#8ac7fd91;
-}
 .bg a{
-    color:rgb(25, 24, 32);
+    color:rgb(255, 255, 255);
     margin-bottom: 2px;
 }
 .bg a:hover{
@@ -127,5 +131,4 @@ nav{
         background-color:rgb(249, 249, 250);
         border-radius: 5px;
     }
-    
 }
