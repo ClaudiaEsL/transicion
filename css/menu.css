@@ -4,7 +4,7 @@
 
 nav{
     width:23%;
-    height:650px;
+    height:100%;
     overflow: scroll;
     position: fixed;
     background: linear-gradient(to bottom right,#44b7f5, #2239bb,#073fa8);
