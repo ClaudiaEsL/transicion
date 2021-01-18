@@ -19,6 +19,9 @@
     margin-top: 15px;
     cursor: pointer;
     background-color:none;
+    cursor: pointer;
+    width:90%; 
+    margin-left: 5%;
 }
 .reproductores .icon button{
     background-color:rgba(255, 30, 0, 0);
@@ -46,6 +49,8 @@
     }
     .reproductores .icon{
         margin-top: 15px;
+        width:100%;
+        margin-left: 18%;
     }
     .reproductores h5{
         color:rgba(6, 11, 63, 0.658);
