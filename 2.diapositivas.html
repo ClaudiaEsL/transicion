@@ -14,7 +14,6 @@
     <title>Diapositivas</title>
     <!--jquery-->
     <script src="js/jquery-3.5.1.min.js"></script>
-
 </head>
 <body>
     
@@ -23,7 +22,9 @@
         <nav class="">
             <div class="cont-menu">
                 <div class="img" >
-                    <img src="images/logo-amdeco.png" alt="" class="img-fluid text-center" width="40%" >
+                    <a href="index.html">
+                        <img src="images/logo-amdeco.png" alt="" class="img-fluid text-center" width="50%" >
+                    </a>
                 </div>
                 <div class="icon-menu btn" style="color:white;">
                     <svg  id="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -40,19 +41,28 @@
                 </div>
                 <div class="content-options">
                     <div class="nav-item">
-                        <a href="index.html"  class="nav-link btn-options">Inicio</a>
+                        <a href="index.html"  class="nav-link btn-options">1. Inicio</a>
                     </div>
                     <div class="nav-item">
-                        <img src="images/one.svg" alt="" class="img-fluid" width="20px">
-                        <a href="1.presentacion.html"  class="nav-link btn-options">Presentacion</a>
+                        <a href="1.presentacion.html"  class="nav-link btn-options">2. Presentación</a>
                     </div>
                     <div class="nav-item active">
-                        <img src="images/two.svg" alt="" class="img-fluid" width="20px">
-                        <a href="2.diapositivas.html" class="nav-link btn-options">Diapositivas</a>
+                        <a href="2.diapositivas.html" class="nav-link btn-options">3. Diapositivas</a>
+                    </div>
+                    <hr>
+                    <div class="nav-item">
+                        <a class="nav-link btn-options" href="#">4. Matrices</a>
                     </div>
                     <div class="bg">
-                        <a href="Matriz-1.html" class="nav-link">Matriz 1: Area administrativa y financiera</a>
+                        <a href="Matriz-1.html" class="nav-link">- Matriz 1: Area administrativa y financiera</a>
                     </div>
+                    <div class="bg">
+                        <a href="Matriz-1.html" class="nav-link">- Matriz 2: Area administrativa y financiera</a>
+                    </div>
+                    <div class="bg">
+                        <a href="Matriz-1.html" class="nav-link">- Matriz 3: Area administrativa y financiera</a>
+                    </div>
+                    <hr>
                     <div class="nav-item">
                         <a href="documentos.html" class="nav-link btn-herramientas" onclick="documentos();">Herramientas de trabajo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
                             <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
@@ -68,51 +78,30 @@
             
         </nav>
         <div class="reproductores">
-            <!--
-            <h5 class="text-center">
-                Ver tutorial
-            </h5>
-            
-            <div class="video">
-                <button>
-                    <svg class="btn btn-danger" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
-                        <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                      </svg>
-                </button>
-                
-            </div>
-            -->
-            <!--
-            <h5 class="text-center">
-                Leer texto
-            </h5>
-            <div class="icon" style="cursor: pointer;">
-                <button>
-                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                    </svg>
-                </button>
-                
-            </div>
-            <div class="icon" style="cursor: pointer;">
-                <button>
-                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
-                        <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
-                    </svg>
-                </button>
-                
-            </div>
-        -->
-            <div class="icon btn btn-success">
-                <img src="images/test.png" alt="" width="100%">
-                <a class="btn btn-success" href="1.cuestionario.html" style="width:90%;">Realizar cuestionario</a>
-            </div>
+            <a class="icon btn-success" href="1.cuestionario.html">
+                <img src="images/test.png" alt="" width="100%" style="background-color:white;">
+                <h7 class="text-center" style="width:90%;">Realizar cuestionario</h7>
+            </a>
+            <a class="icon btn-danger" href="Transición-Transparente-2021.pdf" target="_blank">
+                <img src="images/pdf-bg.png" alt="" width="100%" style="background-color:white;">
+                <h7 class="text-center" style="width:90%;">Descargar documento en PDF</h7>
+            </a>
         </div>
         <!--Content-->
         <main class="contenido-1">
             <div class="contenido" id="contendido-pagina">
                 <h4>Diapositivas</h4>
                 <iframe src="https://upds-my.sharepoint.com/personal/cb_claudia_escobar_l_upds_net_bo/_layouts/15/Doc.aspx?sourcedoc={ae1541b8-19c0-4879-b0f3-3e6d5cb27b56}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="100%" height="565px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                <div class="cont-btn">
+                    <a class="icon btn btn-success" href="1.cuestionario.html">
+                        <img src="images/test.png" alt="" width="50%" style="background-color:white;">
+                        <h7 class="text-center" style="width:50%;">Realizar cuestionario</h7>
+                    </a>
+                    <a class="icon btn btn-danger" href="Transición-Transparente-2021.pdf" target="_blank">
+                        <img src="images/pdf-bg.png" alt="" width="50%" style="background-color:white;">
+                        <h7 class="text-center" style="width:50%;">Descargar documento en PDF</h7>
+                    </a>
+                </div>
             </div>
         </main>
     </div>
