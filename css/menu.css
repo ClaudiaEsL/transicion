@@ -9,6 +9,7 @@ nav{
     overflow: scroll;
     position: fixed;
     background: linear-gradient(to bottom right,#44b7f5, #2239bb,#073fa8);
+    z-index:1;
 }
 
 .btn-options{
@@ -22,7 +23,7 @@ nav{
 }
 .options div h4{
     color:#ffffff;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Serif', serif;
     padding:2% 0 2% 0;
 }
 .options{
