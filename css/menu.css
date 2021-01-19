@@ -92,7 +92,7 @@ nav{
         padding:2px;
     }
     .cont-menu{
-        background-color: #1471cb;
+        background: linear-gradient(to top left,#0875af, #3a50ce,#1356d3);
         width:100%;
         display: flex;
         padding:5px;

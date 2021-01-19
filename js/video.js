@@ -7,7 +7,7 @@ function verVideo(){
     btn.style = "display: block;";
     mp4.style = "display: block;";
     contenido.style = "display:none;";
-    btnaudio.style = "display: block;";
+    btnaudio.style = "display: none;";
     mp4.play();
 }
 /*Cerrar video*/

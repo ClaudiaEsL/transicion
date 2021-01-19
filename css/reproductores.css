@@ -45,7 +45,6 @@
         margin-left:82%;
         flex-direction: column;
         width:15%;
-        height: 600px;
         background: none;
         z-index:1;
     }
@@ -55,8 +54,9 @@
         margin-left: 18%;
     }
     .reproductores h5{
-        color:rgba(6, 11, 63, 0.658);
-        font-size:70%;
+        color:rgba(0, 0, 0, 0.658);
+        font-size:80%;
         padding:5%;
+        margin-left: 40%;
     }
 }

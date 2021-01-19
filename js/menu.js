@@ -1,7 +1,7 @@
 /*Abrir menu */
 $("#menu").click(
     function(){
-        $("#options").css("display","block").slideDown(1000);
+        $("#options").fadeToggle();
         $("#menu").css("display","none");
         $("#cerrar").css("display","inline");
     }
@@ -10,7 +10,7 @@ $("#menu").click(
 /*Cerrar menu */
 $("#cerrar").click(
     function(){
-        $("#options").css("display","none").slideUp(1000);
+        $("#options").fadeOut(100);
         $("#cerrar").css("display","none");
         $("#menu").css("display","inline");
     }
