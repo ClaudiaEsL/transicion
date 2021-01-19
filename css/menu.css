@@ -9,7 +9,7 @@ nav{
     overflow: scroll;
     position: fixed;
     background: linear-gradient(to bottom right,#44b7f5, #2239bb,#073fa8);
-    z-index:1;
+    z-index:100;
 }
 
 .btn-options{
