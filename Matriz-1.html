@@ -79,6 +79,17 @@
             
         </nav>
         <div class="reproductores">
+            <div id="volver" style="display:none;">
+                <h5 class="text-center">
+                    Volver
+                </h5>
+                <div class="icon" style="cursor: pointer;">
+                    <button onclick="volver()" class="btn btn-light" style="background-color:white;">
+                        <img src="images/backbtn.png" alt="" width="25">
+                    </button>
+                </div>
+            </div>
+            <br>
             <h5 class="text-center">
                 Ver tutorial
             </h5>
@@ -87,58 +98,67 @@
                     <svg class="btn btn-danger" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
                         <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                       </svg>
-                </button>                
+                </button>
             </div>
             <br>
-            <h5 class="text-center">
-                Leer texto
-            </h5>
-            <div class="icon" style="cursor: pointer;">
-                <button>
-                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                        <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                    </svg>
-                </button>
-                
-            </div>
-            <div class="icon" style="cursor: pointer;">
-                <button>
-                    <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
-                        <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
-                    </svg>
-                </button>
+            <div id="btn-audio">
+                <h5 class="text-center">
+                    Leer texto
+                </h5>
+                <div class="icon" style="cursor: pointer;">
+                    <button>
+                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                    </button>
+                </div>
+                <br>
+                <div class="icon" style="cursor: pointer;">
+                    <button>
+                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+                            <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
         <!--Content-->
         <main class="contenido-1">
             <div class="contenido" id="contendido-pagina">
                 <div class="container">
-                    <video src="video/Matriz1.wmv" id="video" controls width="80%" style="display:none;"></video>
-                    <h1>5.4 Matriz No. 1: Área  Administrativa – Financiera</h1>
+                    <!--Video-tutorial-->
+                    <div id="video" style="display:none;">
+                        <h3 class="text-center">Tutorial</h3>
+                        <video src="video/video.mp4" id="video" controls width="100%" ></video>
+                    </div>
+                    <!---->
+                    <div id="texto" style="display:block;">
+                        <h1>5.4 Matriz No. 1: Área  Administrativa – Financiera</h1>
                     
-                    <p>
-            
-                        En esta área se tienen los siguientes grupos de documentos: Control Gubernamental, Organización Administrativa y Gestión de Recursos Humanos, Administración Financiera y Administración de Bienes y Servicios.
-            
-                        CONTROL GUBERNAMENTAL
-            
-                        1. Resoluciones Administrativas: Emitidas para aprobar reglamentos, estrategias, modificaciones presupuestarias u otras propias del ejecutivo municipal. (Ley 2028, Artículo 44º numeral 4)
-            
-                        2. Reglamentos de Control Gubernamental: Procedimientos de control posterior elaborados por la Unidad de Auditoría Interna de la municipalidad o de la mancomunidad (Ley 1178).
-            
-                        3. Informes SAYCO y Auditoria: Documentos de auditoria en general, de auditoria SAYCO, del cumplimiento de las recomendaciones, observaciones y compromisos del gobierno municipal. (Ley 1178 Artículo 15º y 16º)
-            
-                        ORGANIZACIÓN ADMINISTRATIVA Y GESTIÓN DE RECURSOS HUMANOS
-            
-                        4. Reglamento específico del Sistema de Administración de Personal: Reglamento para el funcionamiento del sistema de administración de personal en el marco de las normas básicas vigentes y de la estructura organizacional, aprobado mediante Resolución y Compatibilizado por la Dirección General de Normas de Gestión Pública (Normas Básicas del Sistema de Administración de Personal D. S. 26115, Artículo 6º inciso i).
-            
-                        5. Organigrama del gobierno municipal: Estructura organizacional del gobierno municipal aprobado por Resolución. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-            
-                        6. Manual de Organización y Funciones: Instrumento de descripción de cargos y funciones basado en la estructura organizacional del Gobierno Municipal. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-            
-                        7. Manual de procesos: Documento operativo para la administración de personal, aprobado por Resolución Administrativa. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-            
-                    </p>
+                        <p>
+                
+                            En esta área se tienen los siguientes grupos de documentos: Control Gubernamental, Organización Administrativa y Gestión de Recursos Humanos, Administración Financiera y Administración de Bienes y Servicios.
+                
+                            CONTROL GUBERNAMENTAL
+                
+                            1. Resoluciones Administrativas: Emitidas para aprobar reglamentos, estrategias, modificaciones presupuestarias u otras propias del ejecutivo municipal. (Ley 2028, Artículo 44º numeral 4)
+                
+                            2. Reglamentos de Control Gubernamental: Procedimientos de control posterior elaborados por la Unidad de Auditoría Interna de la municipalidad o de la mancomunidad (Ley 1178).
+                
+                            3. Informes SAYCO y Auditoria: Documentos de auditoria en general, de auditoria SAYCO, del cumplimiento de las recomendaciones, observaciones y compromisos del gobierno municipal. (Ley 1178 Artículo 15º y 16º)
+                
+                            ORGANIZACIÓN ADMINISTRATIVA Y GESTIÓN DE RECURSOS HUMANOS
+                
+                            4. Reglamento específico del Sistema de Administración de Personal: Reglamento para el funcionamiento del sistema de administración de personal en el marco de las normas básicas vigentes y de la estructura organizacional, aprobado mediante Resolución y Compatibilizado por la Dirección General de Normas de Gestión Pública (Normas Básicas del Sistema de Administración de Personal D. S. 26115, Artículo 6º inciso i).
+                
+                            5. Organigrama del gobierno municipal: Estructura organizacional del gobierno municipal aprobado por Resolución. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                            6. Manual de Organización y Funciones: Instrumento de descripción de cargos y funciones basado en la estructura organizacional del Gobierno Municipal. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                            7. Manual de procesos: Documento operativo para la administración de personal, aprobado por Resolución Administrativa. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                        </p>
+                    </div>
                 </div>
                 
             </div>

@@ -11,7 +11,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
 }
-/*Vista grande*/
-@media screen and (max-width:750){
+/*Vista pequeña*/
+@media screen and (max-width:750px){
    
 }

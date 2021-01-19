@@ -1,6 +1,7 @@
 
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('./fonts/NotoSerif-Regular.ttf');
+
 
 nav{
     width:23%;

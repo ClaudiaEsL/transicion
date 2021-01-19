@@ -15,7 +15,28 @@
     <!--jquery-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <style>
+        /*Diapositivas*/
+        .cont-btn{
+            display:none;
+        }
         @media screen and (max-width:750px){
+            .reproductores{
+                display:none;
+            }
+            .contenido{
+                width: 100%;
+            }
+            .cont-btn{
+                width:100%;
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+            .cont-btn a{
+                width:40%;
+                display:flex;
+                flex-flow: row;
+            }
             iframe{
                 height:400px;
                 margin-bottom: 2%;
