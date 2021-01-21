@@ -14,7 +14,17 @@
     <title>Inicio</title>
     <!--jquery-->
     <script src="js/jquery-3.5.1.min.js"></script>
-
+    
+    <style>
+        #video{
+            width:100%;
+        }
+        @media screen and (max-width:750px){
+            #video{
+            width:110%;
+        }
+        }
+    </style>
 </head>
 <body>
     
@@ -146,7 +156,7 @@
                     <!--Video-tutorial-->
                     <div id="video" style="display:none;">
                         <h3 class="text-center">Tutorial</h3>
-                        <video src="video/video.mp4" id="video" controls width="100%" ></video>
+                        <video src="video/video.mp4" id="video" controls ></video>
                     </div>
                     <!---->
                     <div id="texto" style="display:block;">
