@@ -80,7 +80,19 @@ nav{
     background-color:none;
     color:white;
 }
+#logo-amdeco-nombre{
+    display:block;
+}
+#logo-amdeco{
+    display:none;
+}
 @media screen and (max-width:750px){
+    #logo-amdeco-nombre{
+        display:none;
+    }
+    #logo-amdeco{
+        display:block;
+    }
     #menu{
         display:inline;
     }
