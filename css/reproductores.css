@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-left:90%;
-    background: linear-gradient(to bottom right,#103f97, #29a6e7);
+    background:#002169;
     padding-bottom: 50px;
 }
 .reproductores h5{
@@ -25,7 +25,6 @@
     margin-left: 5%;
 }
 .reproductores .icon button{
-    background-color:rgba(255, 30, 0, 0);
     border: none;
 }
 /*Video*/
