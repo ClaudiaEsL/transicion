@@ -97,7 +97,7 @@
             <div id="volver" style="display:none;">
                 <div class="icon" style="cursor: pointer;">
                     <button onclick="volver()" class="btn btn-light" style=" color:white;background-color:rgb(255, 140, 46);">
-                        Volver al documento
+                        Ocultar video
                     </button>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                     Leer texto
                 </h5>
                 <div class="icon" style="cursor: pointer;">
-                    <button>
+                    <button onclick="document.getElementById('audio').play()" class="btn-success">
                         <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                             <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                         </svg>
@@ -127,7 +127,7 @@
                 </div>
                 <br>
                 <div class="icon" style="cursor: pointer;">
-                    <button onclick="document.getElementById('audio').pause()">
+                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
                         <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
                             <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
                           </svg>
@@ -135,7 +135,7 @@
                 </div>
                 <br>
                 <div class="icon" style="cursor: pointer;">
-                    <button>
+                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
                         <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
                             <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
                         </svg>
@@ -150,7 +150,7 @@
                     <!--Video-tutorial-->
                     <div id="video" style="display:none;">
                         <h3 class="text-center">Tutorial</h3>
-                        <video src="video/video.mp4" id="video" controls ></video>
+                        <video src="video/Matriz1.wmv" id="video" controls ></video>
                     </div>
                     <!---->
                     <div id="texto" style="display:block;">

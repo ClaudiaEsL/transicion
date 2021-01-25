@@ -1,20 +1,18 @@
 
 /*fonts*/
 @import url('./fonts/NotoSerif-Regular.ttf');
-
-
 nav{
-    width:23%;
+    width:20%;
     height:100%;
     overflow: scroll;
     position: fixed;
     background:#001c58;
     z-index:100;
 }
-
 .btn-options{
     color:rgba(255, 255, 255, 0.774)!important;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:12px;
 }
 .active a{
     color:rgb(255, 255, 255)!important;
@@ -33,9 +31,11 @@ nav{
 .bg a{
     color:rgb(255, 255, 255);
     margin-bottom: 2px;
+    font-size:15px;
 }
 .btn-herramientas{
     color:rgb(79, 248, 79)!important;
+    font-size:15px;
 }
 .btn-herramientas:hover{
     color:rgb(2, 83, 2)!important;
@@ -60,9 +60,11 @@ nav{
 .icon-menu button{
     display:none;
 }
+/*Hover para cada opcion*/
 .content-options div .btn-options:hover{
-    color:rgb(51, 51, 51)!important;
+    color:rgb(255, 255, 255)!important;
 }
+/*Botones de abrir y cerrar menu en modo responsivo*/
 #cerrar{
     display:none;
     background-color:none;
@@ -78,6 +80,7 @@ nav{
     background-color:none;
     color:white;
 }
+/*Logos */
 #logo-amdeco-nombre{
     display:block;
 }
@@ -87,6 +90,7 @@ nav{
 #img-principal{
     width:50%;
 }
+/*Responsive*/
 @media screen and (max-width:750px){
     #img-principal{
         width:90%;
