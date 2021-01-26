@@ -87,9 +87,6 @@ nav{
 #logo-amdeco{
     display:none;
 }
-/*#img-principal{
-    width:50%;
-}*/
 /*Responsive*/
 @media screen and (max-width:750px){
     #img-principal{
@@ -99,7 +96,7 @@ nav{
         display:none;
     }
     #logo-amdeco{
-        display:inline;
+        display:block;
     }
     #menu{
         display:inline;
