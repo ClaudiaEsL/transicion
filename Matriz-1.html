@@ -26,10 +26,21 @@
         #video{
             width:100%;
         }
+        .btn-video{
+            margin-right:1%;
+            font-size:80%;
+        }
+        
         @media screen and (max-width:750px){
             #video{
-            width:110%;
-        }
+                width:110%;
+                
+            }
+            .btn-video{
+                width:100%;
+                margin-right:1%;
+                font-size:70%;
+            }
         }
     </style>
 </head>
@@ -100,13 +111,13 @@
             </div>
             <br>
             <div class="icon" style="cursor: pointer;" id="btn-ver-video">
-                <button class="btn btn-danger" onclick="verVideo()">
+                <button class="btn btn-danger btn-video" onclick="verVideo()" >
                    Ver tutorial
                 </button>
             </div>
             <br>
             <div class="icon" style="cursor: pointer;">
-                <a href="documents/Matriz1.doc" class="btn btn-success">
+                <a href="documents/Matriz1.doc" class="btn btn-success btn-video" >
                     Descargar matriz 
                 </a>
             </div>
