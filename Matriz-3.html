@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudia A. Escobar L., abiC.CAEL@gmail.com">
+    <meta name="description" content="Transición municipal: Guia de instrumentos para la transición transparente municipal.">
+    <meta name="keywords" content="Transicion municipal, Transicion transparente, Transicion Cochabamba"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta name="robots" content= "index, follow">
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contenedor.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/reproductores.css">
+    <!--Boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Titulo del documento-->
+    <title>Matriz 3</title>
+    <link rel="icon" href="images/Logo-Transicion.png">
+    <!--jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+    <style>
+        #video{
+            width:100%;
+        }
+        .btn-video{
+            margin-right:1%;
+            font-size:80%;
+        }
+        
+        @media screen and (max-width:750px){
+            #video{
+                width:110%;
+                
+            }
+            .btn-video{
+                width:100%;
+                font-size:70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contenedor-body">
+        <!--Navbar-->
+        <nav>
+            <div class="cont-menu">
+                <div class="img" >
+                    <a href="index.html">
+                        <img src="images/logo-Amdeco-nombre.png" alt="" class="img-fluid text-center" id="logo-amdeco-nombre" width="100%" >
+                        <img src="images/logo-amdeco.png" alt="" class="img-fluid text-center" id="logo-amdeco" width="50%" >
+                    </a>
+                </div>
+                <div class="icon-menu btn" style="color:white;">
+                    <svg  id="menu" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    <svg id="cerrar" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="options text-center" id="options">
+                <div>
+                    <h4>Contenido</h4>
+                </div>
+                <div class="content-options">
+                    <div class="nav-item">
+                        <a href="index.html"  class="nav-link btn-options">1. Inicio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="1.presentacion.html"  class="nav-link btn-options">2. Presentación</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="2.diapositivas.html" class="nav-link btn-options">3. Diapositivas</a>
+                    </div>
+                    <hr>
+                    <div class="bg active">
+                        <a href="Matriz-1.html" class="nav-link"> Matriz 1: Area administrativa y financiera</a>
+                    </div>
+                    <div class="bg">
+                        <a href="Matriz-2.html" class="nav-link"> Matriz 2: Area administrativa y financiera</a>
+                    </div>
+                    <div class="bg">
+                        <a href="Matriz-3.html" class="nav-link"> Matriz 3: Area administrativa y financiera</a>
+                    </div>
+                    <hr>
+                    <div class="nav-item">
+                        <a href="documentos.html" class="nav-link btn-herramientas" onclick="documentos();">Herramientas de trabajo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                            <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                          </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="reproductores">
+            <div id="volver" style="display:none;">
+                <div class="icon" style="cursor: pointer;">
+                    <button onclick="volver()" class="btn btn-light" style=" color:white;background-color:rgb(255, 140, 46);">
+                        Ocultar video
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="icon" style="cursor: pointer;" id="btn-ver-video">
+                <button class="btn btn-danger btn-video" onclick="verVideo()" >
+                   Ver tutorial
+                </button>
+            </div>
+            <br>
+            <div class="icon" style="cursor: pointer;">
+                <a href="documents/Matriz1.doc" class="btn btn-success btn-video" >
+                    Descargar PDF
+                </a>
+            </div>
+            <br>
+            <div id="btn-audio">
+                <h5 class="text-center">
+                    Leer texto
+                </h5>
+                <div class="icon" style="cursor: pointer;">
+                    <button onclick="document.getElementById('audio').play()" class="btn-success">
+                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icon" style="cursor: pointer;">
+                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
+                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="icon" style="cursor: pointer;">
+                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
+                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+                            <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+        <main class="contenido-1">
+            <div class="contenido" id="contendido-pagina">
+                <div class="container">
+                    <!--Video-tutorial-->
+                    <div id="video" style="display:none;">
+                        <h3 class="text-center">Tutorial</h3>
+                        <video src="video/Matriz1.wmv" id="video" controls ></video>
+                    </div>
+                    <!---->
+                    <div id="texto" style="display:block;">
+                        <h1>5.4 Matriz No. 1: Área  Administrativa – Financiera</h1>
+                    
+                        <p>
+                
+                            En esta área se tienen los siguientes grupos de documentos: Control Gubernamental, Organización Administrativa y Gestión de Recursos Humanos, Administración Financiera y Administración de Bienes y Servicios.
+                
+                            CONTROL GUBERNAMENTAL
+                
+                            1. Resoluciones Administrativas: Emitidas para aprobar reglamentos, estrategias, modificaciones presupuestarias u otras propias del ejecutivo municipal. (Ley 2028, Artículo 44º numeral 4)
+                
+                            2. Reglamentos de Control Gubernamental: Procedimientos de control posterior elaborados por la Unidad de Auditoría Interna de la municipalidad o de la mancomunidad (Ley 1178).
+                
+                            3. Informes SAYCO y Auditoria: Documentos de auditoria en general, de auditoria SAYCO, del cumplimiento de las recomendaciones, observaciones y compromisos del gobierno municipal. (Ley 1178 Artículo 15º y 16º)
+                
+                            ORGANIZACIÓN ADMINISTRATIVA Y GESTIÓN DE RECURSOS HUMANOS
+                
+                            4. Reglamento específico del Sistema de Administración de Personal: Reglamento para el funcionamiento del sistema de administración de personal en el marco de las normas básicas vigentes y de la estructura organizacional, aprobado mediante Resolución y Compatibilizado por la Dirección General de Normas de Gestión Pública (Normas Básicas del Sistema de Administración de Personal D. S. 26115, Artículo 6º inciso i).
+                
+                            5. Organigrama del gobierno municipal: Estructura organizacional del gobierno municipal aprobado por Resolución. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                            6. Manual de Organización y Funciones: Instrumento de descripción de cargos y funciones basado en la estructura organizacional del Gobierno Municipal. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                            7. Manual de procesos: Documento operativo para la administración de personal, aprobado por Resolución Administrativa. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+    <!--Bostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--Js-->
+    <script src="js/menu.js"></script>
+    <script src="js/video.js"></script>
+    
+</body>
+</html>

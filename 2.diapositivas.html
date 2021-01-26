@@ -28,6 +28,10 @@
         .cont-btn{
             display:none;
         }
+        .reproductores a{
+            width:90%!important;
+            font-size:80%;
+        }
         @media screen and (max-width:750px){
             .reproductores{
                 display:none;
@@ -45,10 +49,6 @@
                 width:50%;
                 display:flex;
                 flex-flow: row;
-            }
-            iframe{
-                height:400px;
-                margin-bottom: 2%;
             }
         }
         
@@ -94,10 +94,10 @@
                         <a href="Matriz-1.html" class="nav-link"> Matriz 1: Area administrativa y financiera</a>
                     </div>
                     <div class="bg">
-                        <a href="Matriz-1.html" class="nav-link"> Matriz 2: Area administrativa y financiera</a>
+                        <a href="Matriz-2.html" class="nav-link"> Matriz 2: Area administrativa y financiera</a>
                     </div>
                     <div class="bg">
-                        <a href="Matriz-1.html" class="nav-link"> Matriz 3: Area administrativa y financiera</a>
+                        <a href="Matriz-3.html" class="nav-link"> Matriz 3: Area administrativa y financiera</a>
                     </div>
                     <hr>
                     <div class="nav-item">
@@ -114,28 +114,29 @@
         <!--Documentos para descargar-->
         <div class="reproductores">
             <a class="icon btn-success" href="Transición-Transparente-2021.pptx">
-                <h7 class="text-center" style="width:90%;">Descargar documento Power Point</h7>
+                <h7 class="text-center" style="width:90%;">Descargar presentación Power Point</h7>
             </a>
             <a class="icon btn-danger" href="Transición-Transparente-2021.pdf" target="_blank">
-                <h7 class="text-center" style="width:90%;">Descargar documento en PDF</h7>
+                <h7 class="text-center" style="width:90%;">Descargar presentación en PDF</h7>
             </a>
         </div>
         <!--Content-->
         <main class="contenido-1">
             <div class="contenido" id="contendido-pagina">
               <!--Añadir contenido aqui-->
-                <!--Diapositivas-->
+                
+              <!--Diapositivas-->
                 <div id="diapositivas" class="text-center" width="100%">
-
+                    <video src="Transición-Transparente-2021.mp4" controls autoplay width="100%"></video>
                 </div>
                 <!--Fin de las diapositivas-->
                 <br>
                 <div class="cont-btn">
                     <a class="icon btn btn-success"  style="width:50%;" href="Transición-Transparente-2021.pptx" target="_blank">
-                        <h7 class="text-center">Descargar documento Power Point</h7>
+                        <h7 class="text-center">Descargar presentación Power Point</h7>
                     </a>
                     <a class="icon btn btn-danger"  style="width:50%;" href="Transición-Transparente-2021.pdf" target="_blank">
-                        <h7 class="text-center">Descargar documento en PDF</h7>
+                        <h7 class="text-center">Descargar presentación en PDF</h7>
                     </a>
                 </div>
 
@@ -148,6 +149,5 @@
     
     <!--Js-->
     <script src="js/menu.js"></script>
-    <script src="js/show-doc.js"></script>
 </body>
 </html>
