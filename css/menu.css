@@ -113,14 +113,15 @@ nav{
         padding:2px;
     }
     .cont-menu{
-        background:#002169;
+        background:#0f275e;
         width:100%;
         display: flex;
         padding:5px;
     }
     .options{
-        background-color:#002169;
+        background-color:#0f275e;
         z-index: 1;
+        padding:5% 0 5% 0;
     }
     .content-options div a{
         color:white;
