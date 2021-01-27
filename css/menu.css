@@ -2,12 +2,16 @@
 /*fonts*/
 @import url('./fonts/NotoSerif-Regular.ttf');
 nav{
-    width:20%;
+    width:18%;
     height:100%;
     overflow: scroll;
     position: fixed;
-    background:#001c58;
+    background:#0f275ede;
     z-index:100;
+    -webkit-box-shadow: 0 8px 6px -6px black;   
+    -moz-box-shadow: 0 8px 6px -6px black;        
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 1%;
 }
 .btn-options{
     color:rgba(255, 255, 255, 0.774)!important;
@@ -23,7 +27,7 @@ nav{
 .options div h4{
     color:#ffffff;
     font-family: Cambria;
-    font-size:25px;
+    font-size:20px;
 }
 .options{
     display:block;
@@ -31,14 +35,14 @@ nav{
 .bg a{
     color:rgb(255, 255, 255);
     margin-bottom: 2px;
-    font-size:15px;
+    font-size:12px;
 }
 .btn-herramientas{
     color:rgb(79, 248, 79)!important;
-    font-size:15px;
+    font-size:12px;
 }
 .btn-herramientas:hover{
-    color:rgb(2, 83, 2)!important;
+    color:rgb(255, 67, 67)!important;
 }
 /*Icono*/
 .icon-menu{

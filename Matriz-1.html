@@ -102,21 +102,23 @@
         </nav>
         <div class="reproductores">
             <div id="volver" style="display:none;">
-                <div class="icon" style="cursor: pointer;">
-                    <button onclick="volver()" class="btn btn-light" style=" color:white;background-color:rgb(255, 140, 46);">
+                <div class="text-center icon" style="cursor: pointer;">
+                    <button onclick="volver()" class="btn btn-video" style="color:white;background-color:rgb(255, 140, 46);border-radius:0!important;">
                         Ocultar video
                     </button>
                 </div>
             </div>
             <br>
-            <div class="icon" style="cursor: pointer;" id="btn-ver-video">
-                <button class="btn btn-danger btn-video" onclick="verVideo()" >
-                   Ver tutorial
-                </button>
+            <div style="cursor: pointer;" id="btn-ver-video">
+                <div class="text-center icon">
+                    <button class="btn btn-video" onclick="verVideo()" style="border-radius:0!important;color:white;font-size:12px;">
+                        Ver tutorial
+                     </button>
+                </div>
             </div>
             <br>
             <div class="icon" style="cursor: pointer;">
-                <a href="documents/Matriz1.doc" class="btn btn-success btn-video" >
+                <a href="documents/Matriz1.doc" class="btn btn-success btn-video" style="font-size:12px;">
                     Descargar PDF
                 </a>
             </div>
@@ -126,24 +128,17 @@
                     Leer texto
                 </h5>
                 <div class="icon" style="cursor: pointer;">
-                    <button onclick="document.getElementById('audio').play()" class="btn-success">
-                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <button onclick="document.getElementById('audio').play()">
+                        <svg class="btn" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                             <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                         </svg>
                     </button>
                 </div>
                 <div class="icon" style="cursor: pointer;">
-                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
-                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <button onclick="document.getElementById('audio').pause()">
+                        <svg class="btn" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
                             <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
                           </svg>
-                    </button>
-                </div>
-                <div class="icon" style="cursor: pointer;">
-                    <button onclick="document.getElementById('audio').pause()" class="btn-success">
-                        <svg class="btn btn-success" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
-                            <path  d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
-                        </svg>
                     </button>
                 </div>
             </div>
@@ -154,35 +149,36 @@
                 <div class="container">
                     <!--Video-tutorial-->
                     <div id="video" style="display:none;">
-                        <h3 class="text-center">Tutorial</h3>
-                        <video src="video/Matriz1.wmv" id="video" controls ></video>
+                        <h2>Video tutorial: Llenado de matriz</h2>
+                        <video src="video/Matriz1.wmv" id="video" controls style="-webkit-box-shadow: 0 8px 6px -6px black;-moz-box-shadow: 0 8px 6px -6px black;box-shadow: 0 8px 6px -6px black;"></video>
                     </div>
                     <!---->
                     <div id="texto" style="display:block;">
-                        <h1>5.4 Matriz No. 1: Área  Administrativa – Financiera</h1>
+                        <h2>5.4 Matriz No. 1: Área  Administrativa – Financiera</h2>
                     
                         <p>
                 
                             En esta área se tienen los siguientes grupos de documentos: Control Gubernamental, Organización Administrativa y Gestión de Recursos Humanos, Administración Financiera y Administración de Bienes y Servicios.
                 
                             CONTROL GUBERNAMENTAL
+                            <ol>
+                                <li>Resoluciones Administrativas: Emitidas para aprobar reglamentos, estrategias, modificaciones presupuestarias u otras propias del ejecutivo municipal. (Ley 2028, Artículo 44º numeral 4)
+                                </li>
+                                <li>Reglamentos de Control Gubernamental: Procedimientos de control posterior elaborados por la Unidad de Auditoría Interna de la municipalidad o de la mancomunidad (Ley 1178).
+                                </li>
+                                <li>Informes SAYCO y Auditoria: Documentos de auditoria en general, de auditoria SAYCO, del cumplimiento de las recomendaciones, observaciones y compromisos del gobierno municipal. (Ley 1178 Artículo 15º y 16º)
                 
-                            1. Resoluciones Administrativas: Emitidas para aprobar reglamentos, estrategias, modificaciones presupuestarias u otras propias del ejecutivo municipal. (Ley 2028, Artículo 44º numeral 4)
-                
-                            2. Reglamentos de Control Gubernamental: Procedimientos de control posterior elaborados por la Unidad de Auditoría Interna de la municipalidad o de la mancomunidad (Ley 1178).
-                
-                            3. Informes SAYCO y Auditoria: Documentos de auditoria en general, de auditoria SAYCO, del cumplimiento de las recomendaciones, observaciones y compromisos del gobierno municipal. (Ley 1178 Artículo 15º y 16º)
-                
-                            ORGANIZACIÓN ADMINISTRATIVA Y GESTIÓN DE RECURSOS HUMANOS
-                
-                            4. Reglamento específico del Sistema de Administración de Personal: Reglamento para el funcionamiento del sistema de administración de personal en el marco de las normas básicas vigentes y de la estructura organizacional, aprobado mediante Resolución y Compatibilizado por la Dirección General de Normas de Gestión Pública (Normas Básicas del Sistema de Administración de Personal D. S. 26115, Artículo 6º inciso i).
-                
-                            5. Organigrama del gobierno municipal: Estructura organizacional del gobierno municipal aprobado por Resolución. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-                
-                            6. Manual de Organización y Funciones: Instrumento de descripción de cargos y funciones basado en la estructura organizacional del Gobierno Municipal. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-                
-                            7. Manual de procesos: Documento operativo para la administración de personal, aprobado por Resolución Administrativa. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
-                
+                                    ORGANIZACIÓN ADMINISTRATIVA Y GESTIÓN DE RECURSOS HUMANOS
+                                </li>
+                                <li>Reglamento específico del Sistema de Administración de Personal: Reglamento para el funcionamiento del sistema de administración de personal en el marco de las normas básicas vigentes y de la estructura organizacional, aprobado mediante Resolución y Compatibilizado por la Dirección General de Normas de Gestión Pública (Normas Básicas del Sistema de Administración de Personal D. S. 26115, Artículo 6º inciso i).
+                                </li>
+                                <li>Organigrama del gobierno municipal: Estructura organizacional del gobierno municipal aprobado por Resolución. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                                </li>
+                                <li>Manual de Organización y Funciones: Instrumento de descripción de cargos y funciones basado en la estructura organizacional del Gobierno Municipal. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                                </li>
+                                <li>Manual de procesos: Documento operativo para la administración de personal, aprobado por Resolución Administrativa. (Normas Básicas del Sistema de Organización Administrativa R. S. 217055, Numeral 15).
+                                </li>
+                            </ol>
                         </p>
                     </div>
                 </div>

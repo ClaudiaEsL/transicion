@@ -7,7 +7,11 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-left:90%;
-    background:#002169;
+    background:#0f275ede;
+    -webkit-box-shadow: 0 8px 6px -6px black;   
+    -moz-box-shadow: 0 8px 6px -6px black;        
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 1%;
     padding-bottom: 5%;
 }
 .reproductores h5{
@@ -22,9 +26,24 @@
     cursor: pointer;
     width:100%; 
     margin-left: 5%;
+    
 }
 .reproductores .icon button{
     border: none;
+    border-radius: 100%;
+    background-color:rgb(128, 168, 255)!important;
+    -webkit-box-shadow: 0 8px 6px -6px black;   
+    -moz-box-shadow: 0 8px 6px -6px black;        
+    box-shadow: 0 8px 6px -6px black;
+}
+.reproductores .icon a{
+    -webkit-box-shadow: 0 8px 6px -6px black;   
+    -moz-box-shadow: 0 8px 6px -6px black;        
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 1%;
+}
+.reproductores .icon button svg{
+    color:white;
 }
 /*Video*/
 .reproductores .video{
@@ -45,8 +64,9 @@
         width:15%;
         background: none;
         z-index:1;
-        margin-top:2%;
+        margin-top:30%;
         padding-bottom: 0;
+        height:70%;
     }
     .reproductores .icon{
         margin-top: 15px;
@@ -55,7 +75,7 @@
     }
     .reproductores h5{
         color:rgba(0, 0, 0, 0.658);
-        font-size:50%;
+        font-size:12px;
         padding:5%;
         margin-left: 40%;
     }
